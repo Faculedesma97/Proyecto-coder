@@ -16,6 +16,30 @@ footer a{
     padding: 2px;
 
 }
+nav ul {
+    background-image: url(/img/f124772add8643a64bcf03d9d67665fe.jpg);
+    background-size: 400px 55px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+    }
+    
+section h2 a{
+    color: goldenrod;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+section p{
+    color: white;
+    padding-top: 10px;
+}
 
 a:hover {
     background-color: greenyellow;
