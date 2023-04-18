@@ -1,0 +1,45 @@
+.contacto__body{
+    color: white;
+    background-image: linear-gradient(black, rgb(75, 75, 75),black);
+height: 95vh;
+display: flex;
+justify-content: center;
+align-items: center;
+& .contacto__box{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 600px;
+    height: 600px;
+    background-image: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 600px;
+    & .contacto__h2{
+        color: goldenrod;
+        text-decoration:underline ;
+    }
+    & .contaco__seccion{
+        display: flex;
+        gap: 50px;
+       & .contacto__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       
+    }
+}
+}
+.contacto__footer{
+    height: 5vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

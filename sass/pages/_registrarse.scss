@@ -1,0 +1,51 @@
+.sign-up__body{
+    background-image: linear-gradient(rgb(75, 75, 75), black,rgb(75, 75, 75) );
+    display:flex;
+    height: 95vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .sign-up__box{
+        background-color: black;
+        border-radius: 10px;
+        width: 500px;
+        height: 450px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    & nav ul{
+        background-image: none;
+        background-color: black;
+        width: 400px;
+        height: 100px;
+        grid-column: 3/8;
+        grid-row: 1/2;
+        display: flex;
+    }
+    
+    & .sign-up__h1{
+        color: goldenrod;
+        text-decoration: underline;
+        padding: 15px;
+
+    }
+    & .sign-up__list{
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 400px;
+    }
+}
+.sign-up__footer{
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
