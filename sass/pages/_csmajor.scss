@@ -1,3 +1,36 @@
+
+.major__body{
+    background-color: black;
+    color: white;
+    width: 399px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .major__title{
+        color: gold;
+        text-decoration: underline;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    & .major__article{
+        width: 399px;
+        & iframe{
+            width: 399px;
+        }
+        & .major__subtitle{
+            color: gold;
+            padding-bottom: 8px;
+        }
+
+    }
+}
+.major__footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+@media (min-width: 400px){
 .major__body{
     background-image: url(../img/BLAST-CSGO-Major-2023.jpg);
     background-attachment: fixed;
@@ -65,4 +98,5 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 }
