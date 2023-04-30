@@ -1,0 +1,36 @@
+.teams__main{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    & .teams__title{
+        color: gold;
+        text-decoration: underline;
+    }
+    & .teams__challenger{
+        & .teams__challenger-title{
+            color: goldenrod;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        }
+        &-list{
+        padding-top: 10px;
+
+            }
+            & li{
+                list-style: circle;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .teams__legends{
+                &-title{
+                    color: goldenrod;
+                    padding: 10px;}
+                    
+            }
+        }
+    

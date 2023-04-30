@@ -1,5 +1,5 @@
 * {
-    padding: 0;
+    
     margin: 0;
     box-sizing: border-box;
     font-family: 'Sono', sans-serif;
@@ -18,11 +18,12 @@ footer a{
 }
 nav ul {
   background-image: url(../img/f124772add8643a64bcf03d9d67665fe.jpg);
-    background-size: 400px 55px;
+    background-size: 399px 120px;
     padding-top: 15px;
+    height: 110px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     font-size: 1rem;
     text-decoration: none;
@@ -46,7 +47,7 @@ a:hover {
     background-color: greenyellow;
     color: black;
 }
-.footer{
+footer{
     list-style: none;
     gap: 20px;
     display: flex;

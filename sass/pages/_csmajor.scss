@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
     & .major__title{
         color: gold;
         text-decoration: underline;
@@ -14,6 +15,7 @@
     }
     & .major__article{
         width: 399px;
+        padding: 10px;
         & iframe{
             width: 399px;
         }
