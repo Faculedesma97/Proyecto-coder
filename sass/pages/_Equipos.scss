@@ -1,36 +1,126 @@
-.teams__main{
+.teams__main {
+    
     background-color: black;
     color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    & .teams__title{
+
+    & .teams__title {
         color: gold;
         text-decoration: underline;
     }
-    & .teams__challenger{
-        & .teams__challenger-title{
+
+    & .teams__challenger {
+        & .teams__challenger-title {
             color: goldenrod;
             text-align: center;
             padding: 10px;
-            
+
         }
-        }
-        &-list{
+    }
+
+    &-list {
         padding-top: 10px;
 
+    }
+
+    & li {
+        list-style: circle;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .teams__legends {
+        &-title {
+            color: goldenrod;
+            padding: 10px;
+        }
+
+    }
+}
+
+@media (min-width: 400px) {
+    header nav ul {
+        width: 100%;
+        height: 210px;
+        font-size: 2rem;
+        background-image: none;
+        background-color: black;
+    }
+
+    .teams__main {
+        background-color: black;
+
+        & .teams__box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            width: 80%;
+            background-image: url(../img/img-equipos.jpg);
+            background-attachment: fixed;
+
+            & .teams__title{
+                font-size: 3rem;
             }
-            & li{
-                list-style: circle;
-                padding-top: 10px;
-                padding-bottom: 10px;
+
+            & .teams__challenger {
+                display: flex;
+                flex-direction: column;
+                & h2{
+                    font-size: 2rem;
+                }
+
+                & p {
+                    width: 1000px;
+                    font-size: 1.7rem;
+                }
+
+                & .teams__challenger-list {
+                    width: 600px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                }
             }
-            .teams__legends{
-                &-title{
-                    color: goldenrod;
-                    padding: 10px;}
-                    
+
+            & .teams__legends {
+                display: flex;
+                flex-direction: column;
+                width: 1000px;
+                & h2{
+                    font-size: 2rem;
+                    text-align: center;
+                }
+
+                & p {
+                    font-size: 1.7rem;
+                }
+
+                & .teams__legends-list {
+                    width: 600px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                }
+
+
+            }
+
+            & div ul li:hover {
+                background-color: black;
+                border-radius: 5px;
+                color: gold;
+                -moz-transform: scale(1.3);
+                -webkit-transform: scale(1.3);
+                -o-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                transform: scale(1.3);
             }
         }
-    
+
+    }
+}

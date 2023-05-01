@@ -1,69 +1,44 @@
-.contacto__box{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 399px;
-    height: 95vh;
-    background-image: url(../img/contacto.jpg);
-    background-repeat: no-repeat;
-    background-size: 399px 95vh;
-    & .contacto__h1{
-        text-decoration: underline;
-    }
-    & .contacto__seccion{
-        & .contacto__form{
-            
-        }
-    }
-}
-@media (min-width: 400px){
 .contacto__body{
-    color: white;
-    background-image: linear-gradient(black, rgb(75, 75, 75),black);
-height: 95vh;
-display: flex;
-justify-content: center;
-align-items: center;
-& .contacto__box{
+    background-color: black;
+    color: gold;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/contacto.jpg);
-    background-repeat: no-repeat;
-    background-size: 600px 600px;
-    & .contacto__h2{
-        color: goldenrod;
-        text-decoration:underline ;
-    }
-    & .contaco__seccion{
-        display: flex;
-        gap: 50px;
-       & .contacto__form{
+    height: 100%;
+    & .contacto__box{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-       }
+        & .contacto__h1{
+            display: flex;
+            text-align: center;
+        }
+        & .contacto__seccion{
+            padding: 10px;
+            width: 399px;
+            & .contacto__form{
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                & input{
+                    width: 200px;
+                }
+                & select{
+                    width: 150px;
+                }
+            }
+            & .contacto__text{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+                & textarea{
+                    width: 300px;
+                }
+                & input{
+                    width: 60px;
 
-       
+                }
+            }
+        }
     }
-}
-}
-.contacto__footer{
-    height: 5vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 }
