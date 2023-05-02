@@ -1,4 +1,5 @@
 .contacto__body{
+    
     background-color: black;
     color: gold;
     display: flex;
@@ -11,6 +12,7 @@
         & .contacto__h1{
             display: flex;
             text-align: center;
+            text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
         }
         & .contacto__seccion{
             padding: 10px;
@@ -41,4 +43,21 @@
             }
         }
     }
+}
+
+@media(min-width: 400px){
+ .contacto__body{
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .contacto__box{
+        width: 70%;
+        height: 70%;
+        background-image: url(../img/contacto.jpg);
+        background-attachment: fixed;
+        
+        
+    }
+}
 }

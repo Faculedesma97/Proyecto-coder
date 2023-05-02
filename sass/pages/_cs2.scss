@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     color: goldenrod;
+    text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 
 }
 & section{
@@ -17,13 +18,19 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: goldenrod;
+    color: #daa520;
     .counter__article{
         display: flex;
         flex-direction: column;
 
     }
   & .counter__article{
+    & p{
+        padding-bottom: 10px;
+    }
+    & .counter__p{
+        padding-bottom: 10px;
+    }
     & .counter__img{
         padding: 10px;
     }

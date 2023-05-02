@@ -1,5 +1,4 @@
 .teams__main {
-    
     background-color: black;
     color: white;
     display: flex;
@@ -10,6 +9,7 @@
     & .teams__title {
         color: gold;
         text-decoration: underline;
+        text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
     }
 
     & .teams__challenger {
@@ -17,6 +17,7 @@
             color: goldenrod;
             text-align: center;
             padding: 10px;
+            text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 
         }
     }
@@ -36,6 +37,7 @@
         &-title {
             color: goldenrod;
             padding: 10px;
+            text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
         }
 
     }

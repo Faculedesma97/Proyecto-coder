@@ -12,6 +12,7 @@
         text-decoration: underline;
         padding-top: 10px;
         padding-bottom: 10px;
+        text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
     }
     & .major__article{
         width: 399px;
@@ -22,6 +23,7 @@
         & .major__subtitle{
             color: gold;
             padding-bottom: 8px;
+            text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
         }
 
     }

@@ -74,11 +74,15 @@ img {
   background-image: linear-gradient(rgb(24, 24, 24), black);
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .articulo-cs {
   display: flex;
   flex-direction: column;
+}
+.articulo-cs h1 {
+  text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 }
 
 .footer {
@@ -101,6 +105,13 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.articulo-major h2 a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  color: goldenrod;
+  text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 }
 .articulo-major p {
   padding: 20px;
@@ -210,6 +221,7 @@ img {
   display: flex;
   justify-content: center;
   color: goldenrod;
+  text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 }
 .counter__body section {
   padding: 10px;
@@ -218,11 +230,17 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: goldenrod;
+  color: #daa520;
 }
 .counter__body section .counter__article {
   display: flex;
   flex-direction: column;
+}
+.counter__body section .counter__article p {
+  padding-bottom: 10px;
+}
+.counter__body section .counter__article .counter__p {
+  padding-bottom: 10px;
 }
 .counter__body section .counter__article .counter__img {
   padding: 10px;
@@ -309,11 +327,13 @@ img {
 .teams__main .teams__title {
   color: gold;
   text-decoration: underline;
+  text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 }
 .teams__main .teams__challenger .teams__challenger-title {
   color: goldenrod;
   text-align: center;
   padding: 10px;
+  text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 }
 .teams__main-list {
   padding-top: 10px;
@@ -326,6 +346,7 @@ img {
 .teams__main .teams__legends-title {
   color: goldenrod;
   padding: 10px;
+  text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 }
 
 @media (min-width: 400px) {
@@ -413,6 +434,7 @@ img {
 .contacto__body .contacto__box .contacto__h1 {
   display: flex;
   text-align: center;
+  text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 }
 .contacto__body .contacto__box .contacto__seccion {
   padding: 10px;
@@ -442,6 +464,20 @@ img {
   width: 60px;
 }
 
+@media (min-width: 400px) {
+  .contacto__body {
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto__body .contacto__box {
+    width: 70%;
+    height: 70%;
+    background-image: url(../img/contacto.jpg);
+    background-attachment: fixed;
+  }
+}
 .major__body {
   background-color: black;
   color: white;
@@ -456,6 +492,7 @@ img {
   text-decoration: underline;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 }
 .major__body .major__article {
   width: 399px;
@@ -467,6 +504,7 @@ img {
 .major__body .major__article .major__subtitle {
   color: gold;
   padding-bottom: 8px;
+  text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
 }
 
 .major__footer {
