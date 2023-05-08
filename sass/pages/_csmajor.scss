@@ -1,106 +1,222 @@
-
-.major__body{
-    background-color: black;
-    color: white;
-    width: 399px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    & .major__title{
-        color: gold;
-        text-decoration: underline;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
-    }
-    & .major__article{
-        width: 399px;
+@media (max-width: 800px) {
+    .major__body {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 10px;
-        & iframe{
-            width: 399px;
+
+        & .major__title {
+            color: $color-titulo;
+            text-decoration: underline;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
         }
-        & .major__subtitle{
-            color: gold;
+
+        & .major__article {
+            width: 95%;
+            padding: 10px;
+
+            & .major__text {
+                text-align: center;
+            }
+        }
+
+        & iframe {
+            width: 90%;
+        }
+
+        & .major__subtitle {
+            color: $color-titulo;
             padding-bottom: 8px;
             text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
         }
 
     }
 }
-.major__footer{
+
+.major__footer {
     background-color: black;
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
-@media (min-width: 400px){
-.major__body{
-    background-image: url(../img/BLAST-CSGO-Major-2023.jpg);
-    background-attachment: fixed;
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    & .major__title{
-color: gold;
-font-size: 3em;
-text-decoration: underline;
-display: flex;
-justify-content: center;
-align-items: center;
-    }
-    & .major__article{
-        color: white;
-        width: 80%;
-        background-color: rgba(0, 0, 0, 0.329);
-        display: grid;
-        grid-template-columns: repeat(10, 100px);
-        grid-template-rows: repeat(20, 100px);
+
+
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    .major__body {
+        background-image: url(../img/BLAST-CSGO-Major-2023.jpg);
+        background-attachment: fixed;
+        background-size: 100%;
+        display: flex;
         justify-content: center;
-        padding-top: 30px;
-        & .major__text{
-            padding: 20px;
-            font-size: 1.5em;
-            grid-column: 3/9;
-        }
-        & iframe{
-            width: 100%;
-            height: 100%;
-            grid-column: 2/10;
-            grid-row: 5/9;
-        }
-        & .major__subtitle{
-            color: gold;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+
+        & .major__title {
+            color: $color-titulo;
             font-size: 3em;
-            grid-column: 3/9;
-            grid-row: 10/11;
-        }
-        & .major__text2{
-            grid-row: 12/13;
-            grid-column: 3/9;
-            font-size: 1.5em;
-        }
-        & .major__list{
-            font-size: 1.1em;
-            grid-column: 3/9;
-            grid-row: 13/14;
-            padding-top: 40px;
+            text-decoration: underline;
             display: flex;
-            flex-direction: column;
-            justify-content: start;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
         }
 
+        & .major__article {
+            color: white;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.582);
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(10, 100px);
+            grid-template-rows: repeat(14, 100px);
+            justify-content: center;
+
+
+            & .major__text {
+                padding: 20px;
+                font-size: 1.5em;
+                grid-column: 3/9;
+            }
+
+            & iframe {
+                width: 100%;
+                height: 100%;
+                grid-column: 3/9;
+                grid-row: 5/9;
+            }
+
+            & .major__subtitle {
+                color: $color-titulo;
+                font-size: 3em;
+                grid-column: 3/9;
+                grid-row: 10/11;
+                text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
+            }
+
+            & .major__text2 {
+                grid-row: 12/13;
+                grid-column: 3/9;
+                font-size: 1.5em;
+            }
+
+            & .major__list {
+                font-size: 1.1em;
+                grid-column: 3/9;
+                grid-row: 13/14;
+                padding-top: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+            }
+
+        }
+    }
+
+    .major__footer {
+        height: 5vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
-.major__footer{
-    height: 5vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
+
+
+@media (min-width: 1024px) {
+    .major__body {
+        background-image: url(../img/BLAST-CSGO-Major-2023.jpg);
+        background-attachment: fixed;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+
+        & .major__title {
+            color: $color-titulo;
+            font-size: 4em;
+            text-decoration: underline;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
+        }
+
+        & .major__article {
+            color: white;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.582);
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(10, 100px);
+            grid-template-rows: repeat(16, 100px);
+            justify-content: center;
+
+
+            & .major__text {
+                padding: 20px;
+                font-size: 2rem;
+                grid-column: 2/10;
+                text-align: center;
+            }
+
+            & iframe {
+                width: 100%;
+                height: 100%;
+                grid-column: 2/10;
+                grid-row: 6/11;
+            }
+
+            & .major__subtitle {
+                color: $color-titulo;
+                text-align: center;
+                font-size: 3rem;
+                grid-column: 1/11;
+                grid-row: 11/13;
+                text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            & .major__text2 {
+                grid-row: 13;
+                grid-column: 3/9;
+                font-size: 2rem;
+            }
+
+            & .major__list {
+                font-size: 1.8rem;
+                grid-column: 3/9;
+                grid-row: 15;
+                padding-top: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+            }
+
+        }
+    }
+
+    .major__footer {
+        height: 5vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
