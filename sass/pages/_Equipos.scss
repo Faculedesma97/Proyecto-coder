@@ -1,3 +1,4 @@
+@media (max-width: 450px){
 .teams__main {
     background-color: black;
     color: white;
@@ -42,13 +43,13 @@
 
     }
 }
+}
 
-@media (min-width: 400px) {
+@media (max-width: 450px) {
     header nav ul {
         width: 100%;
         height: 210px;
         font-size: 2rem;
-        background-image: none;
         background-color: black;
     }
 
