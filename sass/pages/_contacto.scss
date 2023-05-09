@@ -1,63 +1,151 @@
-.contacto__body{
-    
-    background-color: black;
-    color: gold;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    & .contacto__box{
+@media (max-width: 800px) {
+    .contacto__body {
+
+        background-color: black;
+        color: $color-titulo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        & .contacto__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+
+            & .contacto__h1 {
+                display: flex;
+                text-align: center;
+                text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
+            }
+
+            & .contacto__seccion {
+                padding: 10px;
+
+
+                & .contacto__form {
+                    gap: 10px;
+                    display: flex;
+                    flex-direction: column;
+
+                    & input {
+                        width: 200px;
+                    }
+
+                    & select {
+                        width: 150px;
+                    }
+                }
+
+                & .contacto__text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 10px;
+                    padding-top: 10px;
+
+                    & textarea {
+                        width: 300px;
+                    }
+
+                    & input {
+                        width: 60px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 800px) and (max-width: 1024px) {
+    .contacto__body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        & .contacto__h1{
+        background-color: black;
+
+        & .contacto__box {
+            width: 90%;
+            height: 100vh;
+            background-image: url(../img/contacto.jpg);
+            background-attachment: fixed;
             display: flex;
-            text-align: center;
-            text-shadow: 0 0 10px #FFFFFF, 2px 0px 0px #DADADA;
-        }
-        & .contacto__seccion{
-            padding: 10px;
-            width: 399px;
-            & .contacto__form{
-                gap: 10px;
-                display: flex;
-                flex-direction: column;
-                & input{
-                    width: 200px;
-                }
-                & select{
-                    width: 150px;
-                }
+            flex-direction: column;
+            align-items: center;
+            & .contacto__h1{
+                color: $color-titulo;
             }
-            & .contacto__text{
+
+            & .contacto__seccion {
                 display: flex;
                 flex-direction: column;
-                align-items: start;
+                justify-content: space-around;
                 gap: 10px;
-                & textarea{
-                    width: 300px;
+                & .contacto__form{
+                    color: white;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
                 }
-                & input{
-                    width: 60px;
-
+                & .contacto__text{
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
                 }
             }
         }
     }
 }
 
-@media(min-width: 400px){
- .contacto__body{
-    height: 630px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    & .contacto__box{
-        width: 70%;
-        height: 70%;
-        background-image: url(../img/contacto.jpg);
-        background-attachment: fixed;
-        
-        
+
+@media(min-width: 1024px){
+    .contacto__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+
+        & .contacto__box {
+            width: 90%;
+            height: 100vh;
+            background-image: url(../img/contacto.jpg);
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & .contacto__h1{
+                color: $color-titulo;
+            }
+
+            & .contacto__seccion {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                gap: 10px;
+                & .contacto__form{
+                    color: white;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                & .contacto__text{
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+                }
+            }
+        }
     }
-}
 }
