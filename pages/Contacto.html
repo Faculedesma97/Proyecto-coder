@@ -14,12 +14,12 @@
     <header>
         <nav>
             <ul>
-            <a class="nav__index" href="../index.html">Inicio</a>
-            <a href="./Equipos.html">Equipos</a>
-            <a href="./Counter.html">Counter Strike 2</a>
-            <a href="./Major.html">Major Paris 2023</a>
-            <a href="./Contacto.html">Contacto</a>
-        </ul>
+                <a class="nav__index" href="../index.html">Inicio</a>
+                <a href="./Equipos.html">Equipos</a>
+                <a href="./Counter.html">Counter Strike 2</a>
+                <a href="./Major.html">Major Paris 2023</a>
+                <a href="./Contacto.html">Contacto</a>
+            </ul>
         </nav>
     </header>
     <main class="contacto__body">
@@ -29,21 +29,23 @@
                 Contacte con nosotros
             </h1>
             <section class="contacto__seccion">
-                <article class="contacto__form">
-                    <label for="emaill">E-mail</label>
-                    <input type="text">
-                    <label for="">Motivo del mensaje</label>
-                    <select name="Motivo del mensaje" id="">
-                        <option value="">Seleccionar motivo</option>
-                        <option value="">Reclamo</option>
-                        <option value="">Sugerencia</option>
-                        <option value="">Otro</option>
-                    </select>
-                </article>
-                <article class="contacto__text">
-                    <textarea name="" id="" cols="100" rows="10"></textarea>
-                    <input id="enviar-page3" value="Enviar" type="submit">
-                </article>
+                <form>
+                    <article class="contacto__form">
+                        <label for="emaill">E-mail</label>
+                        <input name="email" type="text">
+                        <label for="">Motivo del mensaje</label>
+                        <select name="Motivo del mensaje" id="">
+                            <option value="">Seleccionar motivo</option>
+                            <option value="">Reclamo</option>
+                            <option value="">Sugerencia</option>
+                            <option value="">Otro</option>
+                        </select>
+                    </article>
+                    <article class="contacto__text">
+                        <textarea name="" id="" cols="100" rows="10"></textarea>
+                        <input id="enviar-contacto" value="Enviar" type="submit">
+                    </article>
+                </form>
 
             </section>
         </div>
